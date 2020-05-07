@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+header{
+    width: 100%;
+}
+nav{
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    font-family:Arial, Helvetica;
+    position: fixed;
+    top: 0;
+}
+nav ul {
+    list-style: none;
+
+}
+
+nav > ul {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    background: #000000;;
+    position: relative;
+}
+
+nav > ul li {
+    display:table-cell;
+}
+
+nav > ul li a{
+    color:white ;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > a span {
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top:-55px;
+}
+
+nav > ul > li > a span .icon{
+    display: block;
+    line-height: 60px;
+}
+
+nav > ul > li > a:hover > span {
+    top: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+/*colores*/
+nav ul li a .primero {
+    background:  rgb(108, 78, 240);;
+}
+
+nav ul li a .segundo {
+    background: #d86f6f;
+}
+
+nav ul li a .tercero {
+    background: rgb(69, 154, 250);
+}
+
+.social{
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 1000;
+}
+
+.social ul{
+    list-style: none;
+}
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.social ul li .icon-facebook{background:#3b5998 ;}
+.social ul li .icon-twitter{background:#00abf0 ;}
+.social ul li .icon-instagram{background:#e4405f ;}
+
+.social ul li a:hover{
+    padding: 10px 30px;
+    background: #000;
+}
+h1{
+    font-family: helvetica ;
+}
+
+.documento{
+    margin:0 200px 0;
+    text-align: center;
+    font-family: Helvetica ;
+}
+h2 {
+    text-align: justify;
+    font-family: helvetica;
+}
+
+.container{
+    width: 10%;
+    margin: auto 80% ;
+}
+.social-icon {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+    padding: 0;
+}
+.social-icon li{
+    list-style: none;
+}
+.social-icon li a {
+    display: block;
+    color: #fff;
+    background: #000;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-transition: all 100ms ease;
+    -o-transition:all 100ms ease;
+    transition: all 100ms ease;
+}
+.social-icon li a:hover{
+    transform: scale(1.2);
+}
+.social-icon li:nth-child(1) a{
+    background: #3b5998;
+}
+
+.social-icon li:nth-child(2) a{
+    background: #00abf0;
+}
+
+.social-icon li:nth-child(3) a{
+    background: #e4405f;
+}
+footer{
+    width: 100%;
+    background: #4f5153;
+    color: #fff;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.container-body{
+    display: flex;
+}
+
+.colum1{
+    max-width: 400px;
+    
+}
+
+.colum1 h2{
+    font-size: 20px;
+    font-family: fantasy;
+}
+.colum1 p{
+    margin-top: 0px;
+
+    
+}
+.colum2 h3{
+    max-width: 400px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+.colum2{
+    text-align: justify;
+    margin:0 150px 0px;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+  }
+  
+  :focus{
+      outline: none;
+  }
+  
+  body{
+      background: rgb(255, 255, 255);
+      font-family: 'Open sans';
+  }
+  
+  /* FORMULARIO =================================== */
+  
+  .form_wrap{
+      width: 1050px;
+      height: 530px;
+      margin: 80px auto 30px;
+      display: flex;
+    
+  
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Informacion de Contacto*/
+  
+  .cantact_info::before{
+      content: '';
+      width: 100%;
+      height: 100%;
+  
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      background: rgb(108, 78, 240);
+      opacity: 0.9;
+  }
+  
+  .cantact_info{
+      width: 38%;
+      position: relative;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      background-image: url('C:\Users\luis\Desktop\Formulario de Contacto\fondo.jpg');
+      background-size: cover;
+      background-position: center center;
+  
+  }
+  
+  .info_title,
+  .info_items{
+      position: relative;
+      z-index: 2;
+      color: #fff;
+  }
+  
+  .info_title{
+      margin-bottom: 60px;
+  }
+  
+  .info_title span{
+      font-size: 100px;
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+  }
+  
+  .info_title h2{
+      font-size: 35px;
+      text-align: center;
+  }
+  
+  .info_items p{
+      display: flex;
+      align-items: center;
+  
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+  }
+  
+  .info_items p:nth-child(1) span{
+      font-size: 30px;
+      margin-right: 10px;
+  }
+  
+  .info_items p:nth-child(2) span{
+      font-size: 30px;
+      margin-right: 10px;
+      margin-left: 3px;
+  }
+  
+  
+  /* Formulario de contacto*/
+  form.form_contact{
+      width: 62%;
+      padding: 30px 40px;
+  }
+  
+  form.form_contact h2{
+      font-size: 25px;
+      font-weight: 600;
+      color: #303030;
+      margin-bottom: 30px;
+  }
+  
+  form.form_contact .user_info{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  form.form_contact label{
+      font-weight: 600;
+  }
+  
+  form.form_contact input,
+  form.form_contact textarea{
+      width: 100%;
+      padding: 8px 0px 5px;
+      margin-bottom: 20px;
+  
+      border: none;
+      border-bottom: 2px solid #D1D1D1;
+  
+      font-family: 'Open sans';
+      color: #5A5A5A;
+      font-size: 14px;
+      font-weight: 400;
+  }
+  
+  form.form_contact textarea{
+      max-width: 100%;
+      min-width: 100%;
+      max-height: 90px;
+  }
+  
+  form.form_contact input[type="submit"]{
+      width: 180px;
+      background:  rgb(108, 78, 240);;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+  
+      align-self: flex-end;
+  
+      color: #fff;
+      font-family: 'Open sans';
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+  }
+  
+  form.form_contact input[type="submit"]:hover{
+      background: rgb(41, 137, 248);
+  }
+  
+  /* Ventana de errores*/
+  .modal_wrap{
+      width: 100%;
+      height: 100vh;
+      background: rgba(0,0,0,0.7);
+  
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 3;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .mensaje_modal{
+      background: #fff;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+      width: 400px;
+      padding: 30px 20px 15px;
+  }
+  
+  .mensaje_modal h3{
+      text-align: center;
+      font-family: 'Ubuntu';
+      font-size: 20px;
+      font-weight: 400;
+  }
+  
+  .mensaje_modal h3:after{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #C5C5C5;
+      margin: 10px 0px 15px;
+  }
+  
+  .mensaje_modal p{
+      font-size: 16px;
+      color: #606060;
+  }
+  
+  .mensaje_modal p:before{
+      content: "\f00d";
+      font-family: FontAwesome;
+      display: inline-block;
+      color: #E25151;
+      margin-right: 8px;
+  }
+  
+  #btnClose{
+      display: inline-block;
+      padding: 3px 10px;
+      margin-top: 10px;
+  
+      background: #E25151;
+      color: #fff;
+      border: 2px solid #B14141;
+      cursor: pointer;
+  
+      float: right;
+  }
